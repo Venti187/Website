@@ -35,7 +35,21 @@ main {
     padding: 20px;
 }
 
+#teamsTable th,
+td {
+    padding: 8px;
+    text-align: left;
+}
 
+.tablePaddingLeft {
+    padding-left: 1000px;
+    text-align: left;
+}
+
+.tablePaddingRight {
+    /*padding-right: -500px;
+    padding-inline: 50px;*/
+}
 
 footer {
     background-color: #333;
