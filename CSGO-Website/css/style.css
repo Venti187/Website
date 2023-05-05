@@ -73,6 +73,7 @@ body {
     
 }
 
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidebar {
@@ -82,6 +83,7 @@ body {
     .sidebar a {
         font-size: 18px;
     }
+
 }
 
 /* Header Image */
@@ -125,4 +127,21 @@ footer {
 .rifles-pictures figure:hover img {
     -webkit-transform: scale(1);
     transform: scale(1);
+}
+
+
+#teamsTable th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+.tablePaddingLeft {
+    padding-left: 1000px;
+    text-align: left;
+}
+
+.tablePaddingRight {
+    /*padding-right: -500px;
+    padding-inline: 50px;*/
 }
