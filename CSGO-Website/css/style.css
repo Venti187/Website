@@ -6,99 +6,203 @@ body {
 }
 
 /* Side Bar */
-.sidebar {
-    height: 100%;
-    /* 100% Full-height */
-    width: 0;
-    /* 0 width - change this with JavaScript */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #111;
-    /* Black*/
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 60px;
-    /* Place content 60px from the top */
-    transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidebar */
-}
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
-/* The sidebar links */
-.sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-/* When your mouse is over the navigation links, change their color */
-.sidebar a:hover {
-    color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-/* The button used to open the sidebar */
-.openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: transparent;
-    color: rgb(218, 147, 33);
-    padding: 10px 15px;
-    border: none;
-}
-
-.openbtn:hover {
-    background-color: #444;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    /* If you want a transition effect */
-    padding: 20px;
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
     
 }
 
+.sidebar {
+    min-height: 100%;
+    width: 78px;
+    padding: 6px 14px;
+    z-index: 99;
+    background: linear-gradient(#cf7a11,#bd5f08);
+    transition: all .5s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidebar {
-        padding-top: 15px;
-    }
+.sidebar.open {
+    width: 200px;
+}
 
-    .sidebar a {
-        font-size: 18px;
-    }
+.sidebar .logo_details {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.sidebar .logo_details img {
+    width: 45px;
+    height: 45px;
+    opacity: 0;
+}
+
+.sidebar .logo_details .logo_name {
+    font-size: 22px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all .5s ease;
+    font-family: 'Kdam Thmor Pro';
+}
+
+.sidebar.open .logo_details .logo_name,
+.sidebar.open .logo_details img {
+    opacity: 1;
+}
+
+.sidebar .logo_details #btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.sidebar.open .logo_details #btn {
+    text-align: right;
 
 }
+
+.sidebar i {
+    color: black;
+    height: 60px;
+    line-height: 60px;
+    min-width: 50px;
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+.sidebar .nav_list {
+    margin-top: 20px;
+    height: 100%;
+}
+
+.sidebar li {
+    position: relative;
+    margin: 8px 0;
+    list-style: none;
+}
+
+.sidebar li .tooltip {
+    position: absolute;
+    top: -20px;
+    left: calc(100% + 15px);
+    z-index: 3;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px 14px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sidebar li:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sidebar.open li .tooltip {
+    display: none;
+}
+
+.sidebar li a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    transition: all .5s ease;
+    z-index: 12;
+}
+
+.sidebar li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    background-color: rgb(22, 21, 21);
+    /* change color design later */
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left;
+    z-index: -2;
+}
+
+.sidebar li a:hover::after {
+    transform: scaleX(1);
+    color: rgb(211, 139, 6);
+}
+
+.sidebar li a .link_name {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    white-space: nowrap;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* If hover, name color changes */
+.sidebar li a:hover .link_name,
+.sidebar li a:hover i {
+    transition: all 0.5s ease;
+    color: rgb(211, 139, 6);
+}
+
+.sidebar.open li a .link_name {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sidebar li i {
+    height: 80px;
+    line-height: 80px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+
+
 
 /* Header Image */
 .top-header {
     width: 100%;
-    background-image: url(../Website-Images/header-background.webp);
+    height: 175px;
+    background-image: linear-gradient(to bottom,transparent 0%,#000000bd 70%, #000000 95%), url(../Website-Images/header-background.webp);
     background-size: cover;
     background-position: center;
-    
+
 }
 
 .top-header>h1 {
     color: white;
-    padding: 0.5em 1em;
-    font-family: sans-serif;
+    padding: 2.5em 3.5em;
+    font-family: 'Staatliches';
+    text-shadow: 2px 2px 4px #000000;
 }
 
 /* changes footer */
@@ -140,4 +244,3 @@ td {
     padding-left: 1000px;
     text-align: left;
 }
-
