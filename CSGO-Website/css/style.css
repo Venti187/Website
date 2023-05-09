@@ -6,15 +6,13 @@ body {
 }
 
 /* Side Bar */
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
 
 * {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    
+
 }
 
 .sidebar {
@@ -22,7 +20,7 @@ body {
     width: 78px;
     padding: 6px 14px;
     z-index: 99;
-    background: linear-gradient(#cf7a11,#bd5f08);
+    background: linear-gradient(#cf7a11, #bd5f08);
     transition: all .5s ease;
     position: fixed;
     top: 0;
@@ -83,7 +81,7 @@ body {
     min-width: 50px;
     font-size: 25px;
     text-align: center;
-    
+
 }
 
 .sidebar .nav_list {
@@ -143,7 +141,6 @@ body {
     height: 100%;
     transform: scaleX(0);
     background-color: rgb(22, 21, 21);
-    /* change color design later */
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
     transform-origin: left;
@@ -192,16 +189,16 @@ body {
 .top-header {
     width: 100%;
     height: 175px;
-    background-image: linear-gradient(to bottom,transparent 0%,#000000bd 70%, #000000 95%), url(../Website-Images/header-background.webp);
+    background-image: linear-gradient(to bottom, transparent 0%, #000000bd 70%, #000000 95%), url(../Website-Images/header-background.webp);
     background-size: cover;
     background-position: center;
 
 }
 
 .top-header>h1 {
-    color: white;
+    color: #cf7a11;
     padding: 2.5em 3.5em;
-    font-family: 'Staatliches';
+    font-family: 'Staatliches', cursive;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -214,6 +211,7 @@ footer {
 }
 
 
+/* Weapons Page */
 
 /* Images Hover Zoom Out */
 .rifles-pictures figure {
@@ -243,4 +241,81 @@ td {
 .tablePaddingLeft {
     padding-left: 1000px;
     text-align: left;
+}
+
+/* Quiz page */
+
+
+
+.container {
+    font-family: 'Nova Square';
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#quiz-header {
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 5rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    font-size: 2.2rem;
+    padding: 1.5rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(90deg, #cf7a11 0%, #bd5f08 100%);
+    border-radius: 4px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(223,126,36,0.6);
+    transition: transform 150ms;
+    transform: scale(1.02);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#highscore-btn {
+    background: linear-gradient(90deg, rgb(168, 13, 13) 0%, rgb(180, 3, 3) 100%);
+}
+
+#highscore-btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 29, 4, 0.5);
 }

@@ -1,3 +1,5 @@
+
+// Open or close Sidebar
 window.onload = function(){
   const sidebar = document.querySelector(".sidebar");
   const closeBtn = document.querySelector("#btn");
@@ -14,5 +16,7 @@ window.onload = function(){
       closeBtn.classList.replace("bx-menu-alt-right","bx-menu")
     }
   }
+
+  
 
 }
