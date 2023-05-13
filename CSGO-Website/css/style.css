@@ -243,9 +243,8 @@ td {
     text-align: left;
 }
 
+
 /* Quiz page */
-
-
 
 .container {
     font-family: 'Nova Square';
@@ -259,10 +258,23 @@ td {
     padding: 2rem;
 }
 
-#quiz-header {
-    font-size: 5rem;
+.container h1 {
+    font-size: 2.5rem;
     color: white;
-    margin-bottom: 5rem;
+    margin-bottom: 2.8rem;
+}
+
+.container h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+
+#quiz-header {
+    font-size: 4.5rem;
+}
+
+#question h1 {
+    font-size: 1rem;
 }
 
 .flex-column {
@@ -288,9 +300,10 @@ td {
 }
 
 .btn {
+    font-family: 'Nova Square';
     font-size: 2.2rem;
     padding: 1.5rem 0;
-    width: 30rem;
+    width: 25rem;
     text-align: center;
     margin-bottom: 1rem;
     text-decoration: none;
@@ -301,7 +314,7 @@ td {
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgb(223,126,36,0.6);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(223,126,36,0.6);
     transition: transform 150ms;
     transform: scale(1.02);
 }
@@ -318,4 +331,50 @@ td {
 
 #highscore-btn:hover {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 29, 4, 0.5);
+}
+
+/* End Page */
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 15rem;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    border: none;
+    box-shadow: 0 0.1rem 1.4rem 0 rgba(236, 122, 15, 0.815);
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 2.4rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#saveScoreButton {
+    border: none;
+}
+
+
+.fa-house {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: rgb(28, 26, 26)
 }
