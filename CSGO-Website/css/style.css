@@ -195,7 +195,7 @@ body {
     background-image: linear-gradient(to bottom,transparent 0%,#000000bd 70%, #000000 95%), url(../Website-Images/header-background.webp);
     background-size: cover;
     background-position: center;
-
+   
 }
 
 .top-header>h1 {
@@ -216,12 +216,73 @@ footer {
 
 
 /* Images Hover Zoom Out */
+
 .rifles-pictures figure {
-    width: 450px;
+    width: 300px;
+}
+
+#column1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150px;
+    
+}
+
+#assault-rifles {
+    padding-right: 20%;
+    float: left;
+}
+
+#sniper-rifles {
+    float: right;
+}
+
+#column2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150px;
+    
+}
+
+#mp-rifles {
+    padding-right: 20%;
+    float: left;
+}
+
+#heavy-weapons {
+    float: right;
+}
+
+#column3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150px;
+    
+}
+
+#pistols {
+    padding-right: 20%;
+    float: left;
+}
+
+#knifes {
+    float: right;
+}
+
+#column4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0%;
 }
 
 .rifles-pictures figure img {
-
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
     -webkit-transition: .3s ease-in-out;
