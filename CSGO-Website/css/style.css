@@ -20,7 +20,7 @@ body {
     width: 78px;
     padding: 6px 14px;
     z-index: 99;
-    background: linear-gradient(#cf7a11, #bd5f08);
+    background: linear-gradient(#f08d15, #cf7622);
     transition: all .5s ease;
     position: fixed;
     top: 0;
@@ -196,7 +196,7 @@ body {
 }
 
 .top-header>h1 {
-    color: #cf7a11;
+    color: #f08d15;
     padding: 2.5em 3.5em;
     font-family: 'Staatliches', cursive;
     text-shadow: 2px 2px 4px #000000;
@@ -308,7 +308,7 @@ td {
     margin-bottom: 1rem;
     text-decoration: none;
     color: rgb(28, 26, 26);
-    background: linear-gradient(90deg, #cf7a11 0%, #bd5f08 100%);
+    background: linear-gradient(90deg, #f08d15 0%, #cf7622 100%);
     border-radius: 4px;
 }
 
