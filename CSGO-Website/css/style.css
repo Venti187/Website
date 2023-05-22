@@ -192,6 +192,7 @@ body {
     background-image: linear-gradient(to bottom, transparent 0%, #000000bd 70%, #000000 95%), url(../Website-Images/header-background.webp);
     background-size: cover;
     background-position: center;
+    
 
 }
 
@@ -208,6 +209,7 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
+    
 }
 
 
@@ -256,12 +258,25 @@ td {
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
+    padding-top: 200px;
+    margin-bottom: 200px;
 }
 
 .container h1 {
     font-size: 2.5rem;
     color: white;
     margin-bottom: 2.8rem;
+}
+
+#skinImageContainer{
+        display: flex;
+        justify-content: center; 
+}
+
+#skinImageContainer img {
+    width: 425px;
+    height: 425px;
+    object-fit: contain;
 }
 
 .container h2 {
@@ -323,6 +338,26 @@ td {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
+}
+
+.playAgainBtn{
+    font-family: 'Nova Square';
+    font-size: 2.2rem;
+    padding: 1.5rem 0;
+    width: 25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(28, 26, 26);
+    background: linear-gradient(90deg, #f08d15 0%, #cf7622 100%);
+    border-radius: 4px;
+}
+
+.playAgainBtn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(223,126,36,0.6);
+    transition: transform 150ms;
+    transform: scale(1.02);
 }
 
 #highscore-btn {

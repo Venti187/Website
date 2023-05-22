@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
-
+    
     <title>Skin Quiz</title>
 </head>
 
@@ -77,15 +77,18 @@
                     <input type="text" name="name" id="username" placeholder="Enter your name">
                     <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
                 </form>
-                <a href="../html/game.html" class="btn">Play Again</a>
-                <a href="../html/quiz.html" class="btn">Go Home<i class="fa-solid fa-house"></i></a>
+                
+                <a href="../html/game.html" class="playAgainBtn">Play Again</a>
+                <a href="../html/quiz.html" class="btn">Go Home<i class="fas fa-home"></i></a>
             </div>
         </div>
     </main>
-    <footer>
-        <p>&copy; 2023 Counter Strike: Global Offensive</p>
-    </footer>
+    <script src="../javascript/game.js"></script>
     <script src="../javascript/end.js"></script>
 </body>
+
+<footer>
+    <p>&copy; 2023 Counter Strike: Global Offensive</p>
+</footer>
 
 </html>
