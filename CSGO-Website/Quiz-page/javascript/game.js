@@ -222,7 +222,7 @@ const SCORE_POINTS = 100
 //change number of questions here
 const MAX_QUESTIONS = 7
 
-playAgainButton = () => {
+playAgain = () => {
     localStorage.removeItem('currentQuestion'); // Clear the saved question index
     localStorage.removeItem('score'); // Clear the saved score
     startGame(); // Reset the game

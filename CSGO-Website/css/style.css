@@ -250,16 +250,16 @@ td {
 
 .container {
     font-family: 'Nova Square';
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
-    padding-top: 200px;
-    margin-bottom: 200px;
+    padding-top: 50px;
+    margin-bottom: 50px;
 }
 
 .container h1 {
@@ -340,7 +340,7 @@ td {
     transform: none;
 }
 
-.playAgainBtn{
+#playAgainBtn{
     font-family: 'Nova Square';
     font-size: 2.2rem;
     padding: 1.5rem 0;
@@ -353,7 +353,7 @@ td {
     border-radius: 4px;
 }
 
-.playAgainBtn:hover {
+#playAgainBtn:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(223,126,36,0.6);
     transition: transform 150ms;
