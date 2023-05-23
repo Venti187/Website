@@ -3,6 +3,9 @@ body {
     padding: 0;
     margin: 0;
     background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Side Bar */
@@ -209,7 +212,7 @@ footer {
     color: #fff;
     padding: 10px;
     text-align: center;
-    
+    margin-top: auto;
 }
 
 
@@ -258,8 +261,10 @@ td {
     max-width: 80rem;
     margin: 0 auto;
     padding: 2rem;
-    padding-top: 50px;
-    margin-bottom: 50px;
+}
+
+#container-center {
+    margin-top: 150px;
 }
 
 .container h1 {

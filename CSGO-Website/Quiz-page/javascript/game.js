@@ -16,7 +16,7 @@ let availableQuestions = []
 let questions = [
     {
         question: 'What is the name of this skin?',
-        image: "../Images/AK-47_Casehardened.png",
+        image: "../Images/Question1.png",
         choice1: 'Ak-47 Gold Arabesque ',
         choice2: 'Ak-47 Safari Mesh',
         choice3: 'Ak-47 Green Laminate',
@@ -26,7 +26,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/AK-47_Fireserpant.png",
+        image: "../Images/Question2.png",
         choice1: 'Ak-47 Fire Serpent',
         choice2: 'Ak-47 Red Laminate',
         choice3: 'Ak-47 Redline',
@@ -36,7 +36,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/AK-47_Headshot.png",
+        image: "../Images/Question3.png",
         choice1: 'Ak-47 Wild Lotus',
         choice2: 'Ak-47 Leet Museo',
         choice3: 'Ak-47 Head Shot',
@@ -46,7 +46,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/AK-47_Nightwish.png",
+        image: "../Images/Question4.png",
         choice1: 'Ak-47 Nightwish',
         choice2: 'Ak-47 Legion of Anubis',
         choice3: 'Ak-47 Bloodsport',
@@ -56,7 +56,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/AUG-Akihabara.png",
+        image: "../Images/Question5.png",
         choice1: 'AUG Chameleon',
         choice2: 'AUG Akihabara',
         choice3: 'AUG Momentum',
@@ -66,7 +66,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/AWP-DLore.png",
+        image: "../Images/Question6.png",
         choice1: 'AWP Oni Taji ',
         choice2: 'AWP Hyper Beast',
         choice3: 'AWP Dragon Lore',
@@ -76,7 +76,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/AWP-Gungir.png",
+        image: "../Images/Question7.png",
         choice1: 'AWP Mortis',
         choice2: 'AWP The Prince',
         choice3: 'AWP Medusa ',
@@ -86,7 +86,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/AWP-NeoNoir.png",
+        image: "../Images/Question8.png",
         choice1: 'AWP Neo Noir',
         choice2: 'AWP Desert Hydra',
         choice3: 'AWP Fade',
@@ -96,7 +96,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/AWP-Wildfire.png",
+        image: "../Images/Question9.png",
         choice1: 'AWP Elite Build',
         choice2: 'AWP Wildfire',
         choice3: 'AWP Corticera',
@@ -106,7 +106,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/Deagle-Blaze.png",
+        image: "../Images/Question10.png",
         choice1: 'Desert-Egale Ocean Drive',
         choice2: 'Desert-Egale Blaze',
         choice3: 'Desert-Egale Code Red',
@@ -116,7 +116,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/Glock-gammadoppler.png",
+        image: "../Images/Question11.png",
         choice1: 'Glock-18 Nuclear Garden',
         choice2: 'Glock-18 Fade',
         choice3: 'Glock-18 Brass ',
@@ -126,7 +126,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/M4A1-Icarusfell.png",
+        image: "../Images/Question12.png",
         choice1: 'M4A1-S Icarus Fell',
         choice2: 'M4A1-S Phosphor',
         choice3: 'M4A1-S Imminent Danger',
@@ -136,7 +136,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/M4A1-Knight.png",
+        image: "../Images/Question13.png",
         choice1: 'M4A1-S Nightmare',
         choice2: 'M4A1-S Atomic Alloy',
         choice3: 'M4A1-S Knight',
@@ -146,7 +146,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/M4A1-Phosphor.png",
+        image: "../Images/Question14.png",
         choice1: 'M4A1-S Icarus Fell',
         choice2: 'M4A1-S Decimator',
         choice3: 'M4A1-S Hot Rod',
@@ -156,7 +156,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/M4A1-Printstream.png",
+        image: "../Images/Question15.png",
         choice1: 'M4A1-S Control Panel',
         choice2: 'M4A1-S Flashback',
         choice3: 'M4A1-S Printstream',
@@ -166,7 +166,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/M4A4-Asiimov.png",
+        image: "../Images/Question16.png",
         choice1: 'M4A4 X-Ray',
         choice2: 'M4A4 Eye of Horus',
         choice3: 'M4A4 Tooth Fairy',
@@ -176,7 +176,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/M4A4-Howl.png",
+        image: "../Images/Question17.png",
         choice1: 'M4A4 The Emperor',
         choice2: 'M4A4 Howl',
         choice3: 'M4A4 Buzz Kill',
@@ -186,7 +186,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/M4A4-Poseidon.png",
+        image: "../Images/Question18.png",
         choice1: 'M4A4 Poseidon',
         choice2: 'M4A4 Desolate Space',
         choice3: 'M4A4 Dragon King',
@@ -196,7 +196,7 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/M4A4-Temukau.png",
+        image: "../Images/Question19.png",
         choice1: 'M4A4 Griffin',
         choice2: 'M4A4 Temukau',
         choice3: 'M4A4 Red DDPAT',
@@ -206,12 +206,72 @@ let questions = [
     },
     {
         question: 'What is the name of this skin?',
-        image: "../Images/USP-KillConfirmed.png",
+        image: "../Images/Question20.png",
         choice1: 'USP-S The Traitor',
         choice2: 'USP-S Neo Noir',
         choice3: 'USP-S Kill Confirmed',
         choice4: 'USP-S Orion',
         answer: 3,
+
+    },
+    {
+        question: 'Which Knife is this?',
+        image: "../Images/Question21.png",
+        choice1: 'Karambit',
+        choice2: 'Talon Knife',
+        choice3: 'M9 Bayonet',
+        choice4: 'Narvaja Knife',
+        answer: 1,
+
+    },
+    {
+        question: 'Which Knife is this?',
+        image: "../Images/Question22.png",
+        choice1: 'Karambit',
+        choice2: 'Talon Knife',
+        choice3: 'Gut Knife',
+        choice4: 'Butterfly Knife',
+        answer: 2,
+
+    },
+    {
+        question: 'Which Knife is this?',
+        image: "../Images/Question23.png",
+        choice1: 'Bayonet',
+        choice2: 'Falchion Knife',
+        choice3: 'Flip Knife',
+        choice4: 'Shadow Daggers',
+        answer: 3,
+
+    },
+    {
+        question: 'What is the name of this skin?',
+        image: "../Images/Question24.png",
+        choice1: 'Butterfly Knife Lore',
+        choice2: 'Butterfly Knife Bright Water',
+        choice3: 'Butterfly Knife Marble Fade',
+        choice4: 'Butterfly Knife Gamma Doppler',
+        answer: 4,
+
+    },
+    {
+        question: 'What is the name of this skin?',
+        image: "../Images/Question25.png",
+        choice1: 'M9 Bayonet Freehand',
+        choice2: 'M9 Bayonet Tiger Tooth',
+        choice3: 'M9 Bayonet Case Hardened',
+        choice4: 'M9 Bayonet Scorched',
+        answer: 2,
+
+    },
+    {
+        question: 'What is the name of this skin?',
+        image: "../Images/Question26.png",
+        choice1: 'Ursus Knife Doppler',
+        choice2: 'Ursus Knife Ultraviolet',
+        choice3: 'Ursus Knife Fade',
+        choice4: 'Ursus Knife Crimson Web',
+        answer: 1,
 
     },
 
@@ -220,7 +280,7 @@ let questions = [
 
 const SCORE_POINTS = 100
 //change number of questions here
-const MAX_QUESTIONS = 7
+const MAX_QUESTIONS = 26
 
 playAgain = () => {
     localStorage.removeItem('currentQuestion'); // Clear the saved question index
