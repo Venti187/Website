@@ -17,15 +17,44 @@ window.onload = function(){
 
 }
 
-function toggleTable() {
-  var table = document.getElementById("myTable");
-  var span = document.querySelector("#assault-rifles .rifles-pictures span");
-  
+function toggleTable(tableId , spanId) {
+  var table = document.getElementById("tableId");
+  var span = document.getElementById("spanId");
+
   if (table.style.display === "none") {
-    table.style.display = "table";
-    span.style.display = "none";
+    fadeIn(table);
+    fadeOut(span);
   } else {
-    table.style.display = "none";
-    span.style.display = "block";
+    fadeOut(table);
+    fadeIn(span);
   }
+}
+
+function fadeIn(element) {
+  element.style.opacity = 0;
+  element.style.display = "table";
+  var opacity = 0;
+
+  var fadeEffect = setInterval(function () {
+    if (opacity < 1) {
+      opacity += 0.1;
+      element.style.opacity = opacity;
+    } else {
+      clearInterval(fadeEffect);
+    }
+  }, 50);
+}
+
+function fadeOut(element) {
+  var opacity = 1;
+
+  var fadeEffect = setInterval(function () {
+    if (opacity > 0) {
+      opacity -= 0.1;
+      element.style.opacity = opacity;
+    } else {
+      clearInterval(fadeEffect);
+      element.style.display = "none";
+    }
+  }, 50);
 }

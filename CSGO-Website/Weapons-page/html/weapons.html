@@ -59,36 +59,69 @@
                 </li>
             </ul>
         </div>
+        <div class="pageTitle">
+            <h1>Weapons</h1>
+            <span></span>
+        </div>
         <!-- Assault Rifles -->
         <div class="all-weapons">
             <div id="column1">
                 <div id="assault-rifles">
                     <div class="rifles-pictures">
-                        <figure><img src="../Images/Assault-Rifles.webp" alt="Assault-Rifle-img" id="assault-rifle-img" onclick="toggleTable()"></figure>
-                        <span>Assault Rifles</span>
-                        <table id="myTable">
-                            <tr>
-                              <th>Header 1</th>
-                              <th>Header 2</th>
-                              <td>Header 3</td>
-                            </tr>
-                            <tr>
-                              <td>Data 1</td>
-                              <td>Data 2</td>
-                              <td>Data 3</td>
-                            </tr>
-                            <tr>
-                              <td>Data 4</td>
-                              <td>Data 5</td>
-                              <td>Data 6</td>
-                            </tr>
-                          </table>
+                        <figure><img src="../Images/Assault-Rifles.webp" alt="Assault-Rifle-img" id="assault-rifle-img"
+                                onclick="toggleTable('AssaultRifleTable','AssaultRiflesSpan')" title="Click to see Weapons"></figure>
+                        <span id="AssaultRiflesSpan">Assault Rifles</span>
+                        <div class="weaponsTable">
+                            <table id="AssaultRifleTable" style="display: none;">
+                                <tr>
+                                    <th>Weapon</th>
+                                    <th>Price</th>
+                                    <th>Availability</th>
+                                </tr>
+                                <tr>
+                                    <td>Galil AR</td>
+                                    <td>$2000</td>
+                                    <td>Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>Famas</td>
+                                    <td>$2250</td>
+                                    <td>Counter-Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>Ak-47</td>
+                                    <td>$2700</td>
+                                    <td>Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>M4A4</td>
+                                    <td>$3100</td>
+                                    <td>Counter-Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>M4A1-S</td>
+                                    <td>$2900</td>
+                                    <td>Counter-Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>SG-553</td>
+                                    <td>$3000</td>
+                                    <td>Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>AUG</td>
+                                    <td>$3300</td>
+                                    <td>Counter-Terrorists</td>
+                                </tr>
+                                
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <!-- Sniper Rifles -->
                 <div id="sniper-rifles">
                     <div class="rifles-pictures">
-                        <figure><img src="../Images/Sniper-Rifles.webp" alt="sniper-rifles-img"></figure>
+                        <figure><img src="../Images/Sniper-Rifles.webp" alt="sniper-rifles-img" title="Click to see Weapons"></figure>
                         <span>Sniper Rifles</span>
                     </div>
                 </div>
@@ -97,14 +130,14 @@
             <div id="column2">
                 <div id="mp-rifles">
                     <div class="rifles-pictures">
-                        <figure><img src="../Images/mp-rifles.webp" alt="mp-rifles-img"></figure>
+                        <figure><img src="../Images/mp-rifles.webp" alt="mp-rifles-img" title="Click to see Weapons"></figure>
                         <span>Mp's</span>
                     </div>
                 </div>
                 <!-- Heavy Weapons -->
                 <div id="heavy-weapons">
                     <div class="rifles-pictures">
-                        <figure><img src="../Images/heavy-weapons.webp" alt="heavy-weapons-img"></figure>
+                        <figure><img src="../Images/heavy-weapons.webp" alt="heavy-weapons-img" title="Click to see Weapons"></figure>
                         <span>Heavy Weapons</span>
                     </div>
                 </div>
@@ -113,14 +146,14 @@
             <div id="column3">
                 <div id="pistols">
                     <div class="rifles-pictures">
-                        <figure><img src="../Images/pistols.webp" alt="pistols-img"></figure>
+                        <figure><img src="../Images/pistols.webp" alt="pistols-img" title="Click to see Weapons"></figure>
                         <span>Pistols</span>
-                    </div>
+                    </div> 
                 </div>
                 <!-- Knifes -->
                 <div id="knifes">
                     <div class="rifles-pictures">
-                        <figure><img src="../Images/knifes.webp" alt="knifes-img"></figure>
+                        <figure><img src="../Images/knifes.webp" alt="knifes-img" title="Click to see Weapons"></figure>
                         <span>Knifes</span>
                     </div>
                 </div>
@@ -129,7 +162,7 @@
             <div id="column4">
                 <div id="grenades">
                     <div class="rifles-pictures">
-                        <figure><img src="../Images/grenades.webp" alt="grenades-img"></figure>
+                        <figure><img src="../Images/grenades.webp" alt="grenades-img" title="Click to see Weapons"></figure>
                         <span>Grenades</span>
                     </div>
                 </div>
