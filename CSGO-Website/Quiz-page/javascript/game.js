@@ -280,7 +280,7 @@ let questions = [
 
 const SCORE_POINTS = 100
 //change number of questions here
-const MAX_QUESTIONS = 26
+const MAX_QUESTIONS = 9
 
 playAgain = () => {
     localStorage.removeItem('currentQuestion'); // Clear the saved question index
