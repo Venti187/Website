@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Weapons</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../../Website-Images/CSGO-Logo.png">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/highscores.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="../../javascript/javascript.js"></script>
+    <script src="https://kit.fontawesome.com/c1e4435f6c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    
+    <title>Highscores</title>
 </head>
 
 <body>
@@ -62,54 +68,19 @@
                 </li>
             </ul>
         </div>
-        <!-- Assault Rifles -->
-        <div id="assault-rifles">
-            <div class="rifles-pictures">
-                <figure><img src="../Images/Assault-Rifles.webp" alt="Assaukt-Rifle-img"></figure>
+        
+        <div class="container">
+            <div id="highScores" class="flex-center flex-column">
+                <h1 id="finalScore">Leaderboard</h1>
+                <ul id="highScoresList"></ul>
+                <a href="../html/quiz.html" class="btn">Go Home<i class="fas fa-home"></i></a>
             </div>
         </div>
-        <!-- Sniper Rifles -->
-        <div id="sniper-rifles">
-            <div class="rifles-pictures">
-                <figure><img src="../Images/Sniper-Rifles.webp" alt="sniper-rifles-img"></figure>
-            </div>
-        </div>
-        <!-- Mps -->
-        <div id="mp-rifles">
-            <div class="rifles-pictures">
-                <figure><img src="../Images/mp-rifles.webp" alt="mp-rifles-img"></figure>
-            </div>
-        </div>
-        <!-- Heavy Weapons -->
-        <div id="heavy-weapons">
-            <div class="rifles-pictures">
-                <figure><img src="../Images/heavy-weapons.webp" alt="heavy-weapons-img"></figure>
-            </div>
-        </div>
-        <!-- Pistols -->
-        <div id="pistols">
-            <div class="rifles-pictures">
-                <figure><img src="../Images/pistols.webp" alt="pistols-img"></figure>
-            </div>
-        </div>
-        <!-- Knifes -->
-        <div id="knifes">
-            <div class="rifles-pictures">
-                <figure><img src="../Images/knifes.webp" alt="knifes-img"></figure>
-            </div>
-        </div>
-        <!-- Grenades -->
-        <div id="grenades">
-            <div class="rifles-pictures">
-                <figure><img src="../Images/grenades.webp" alt="grenades-img"></figure>
-            </div>
-        </div>
-
     </main>
     <footer>
         <p>&copy; 2023 Counter Strike: Global Offensive</p>
     </footer>
-
+    <script src="../javascript/highscores.js"></script>
 </body>
 
 </html>
