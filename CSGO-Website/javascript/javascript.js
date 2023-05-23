@@ -1,3 +1,5 @@
+
+// Open or close Sidebar
 window.onload = function(){
   const sidebar = document.querySelector(".sidebar");
   const closeBtn = document.querySelector("#btn");
@@ -59,4 +61,3 @@ function fadeOut(element) {
     }
   }, 50);
 }
-
