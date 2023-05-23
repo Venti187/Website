@@ -219,12 +219,102 @@ footer {
 /* Weapons Page */
 
 /* Images Hover Zoom Out */
+
 .rifles-pictures figure {
-    width: 450px;
+    width: 300px;
+}
+
+#column1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150px;
+
+}
+
+#assault-rifles {
+    padding-right: 20%;
+    float: left;
+}
+
+#sniper-rifles {
+    float: right;
+}
+
+#column2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150px;
+    
+}
+
+#mp-rifles {
+    padding-right: 20%;
+    float: left;
+}
+
+#heavy-weapons {
+    float: right;
+}
+
+#column3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150px;
+
+}
+
+#pistols {
+    padding-right: 20%;
+    float: left;
+}
+
+#grenades span {
+    padding-right: 50px;
+}
+
+.all-weapons span {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    color: #ed8d19;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    opacity: 0;
+    font-family: 'Staatliches', cursive;
+}
+
+.rifles-pictures figure:hover+span {
+    margin-top: 75px;
+    opacity: 1;
+}
+
+
+.all-weapons {
+    display: grid;
+    grid-gap: 20px; /* Adjust the gap between images as desired */
+    padding: 20px; /* Add padding around the grid */
+}
+
+.rifles-pictures {
+    background: linear-gradient(45deg, #ca7710, #e8982c); /* Replace the color values with your desired gradient */
+    border-radius: 10px; /* Add rounded corners to the image containers */
+    padding: 10px; /* Add padding inside the image containers */
+    text-align: center; /* Center align the images and text inside the containers */
 }
 
 .rifles-pictures figure img {
-
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
     -webkit-transition: .3s ease-in-out;
@@ -235,6 +325,52 @@ footer {
     -webkit-transform: scale(1);
     transform: scale(1);
 }
+
+/* Page Titles */
+.pageTitle h1 {
+    margin-left: 110px;
+    color: #ed8d19;
+    font-family: 'Staatliches';
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 10px;
+}
+
+.pageTitle span {
+    display: inline-block;
+    border-bottom: 3px #ed8d19 solid;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    width: 88%;
+}
+
+/* Weapon Tables design*/
+.weaponsTable {
+    margin-top: 50px;
+
+}
+
+.weaponsTable table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.weaponsTable td,
+th {
+    color: white;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ed8d19;
+}
+
+.weaponsTable tr:nth-child(even) {
+    background-color: #353232;
+}
+
+.weaponsTable tr:hover {
+    background-color: #ed8d19;
+}
+
 
 
 #teamsTable th,
