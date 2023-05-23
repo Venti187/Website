@@ -217,9 +217,6 @@ footer {
 
 
 /* Weapons Page */
-
-/* Images Hover Zoom Out */
-
 .rifles-pictures figure {
     width: 300px;
 }
@@ -300,17 +297,18 @@ footer {
 
 .all-weapons {
     display: grid;
-    grid-gap: 20px; /* Adjust the gap between images as desired */
+    grid-gap: 20px; /* Adjust the gap between images*/
     padding: 20px; /* Add padding around the grid */
 }
 
 .rifles-pictures {
-    background: linear-gradient(45deg, #ca7710, #e8982c); /* Replace the color values with your desired gradient */
+    background: linear-gradient(45deg, #ca7710, #e8982c);
     border-radius: 10px; /* Add rounded corners to the image containers */
     padding: 10px; /* Add padding inside the image containers */
-    text-align: center; /* Center align the images and text inside the containers */
+    text-align: center; 
 }
 
+/* Images Hover Zoom Out */
 .rifles-pictures figure img {
     width: 250px;
     height: 250px;
