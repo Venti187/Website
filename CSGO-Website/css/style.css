@@ -243,7 +243,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding-bottom: 150px;
-
+    
 }
 
 #mp-rifles {
@@ -268,21 +268,6 @@ footer {
     float: left;
 }
 
-#knifes {
-    float: right;
-}
-
-#knifes span {
-    padding-right: 50px;
-}
-
-#column4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
-}
-
 #grenades span {
     padding-right: 50px;
 }
@@ -294,7 +279,7 @@ footer {
     width: 300px;
     margin: 0;
     padding: 0;
-    color: #cf7a11;
+    color: #ed8d19;
     font-size: 18px;
     text-decoration: none;
     text-align: center;
@@ -305,7 +290,22 @@ footer {
 }
 
 .rifles-pictures figure:hover+span {
+    margin-top: 75px;
     opacity: 1;
+}
+
+
+.all-weapons {
+    display: grid;
+    grid-gap: 20px; /* Adjust the gap between images as desired */
+    padding: 20px; /* Add padding around the grid */
+}
+
+.rifles-pictures {
+    background: linear-gradient(45deg, #ca7710, #e8982c); /* Replace the color values with your desired gradient */
+    border-radius: 10px; /* Add rounded corners to the image containers */
+    padding: 10px; /* Add padding inside the image containers */
+    text-align: center; /* Center align the images and text inside the containers */
 }
 
 .rifles-pictures figure img {
@@ -343,6 +343,7 @@ footer {
 /* Weapon Tables design*/
 .weaponsTable {
     margin-top: 50px;
+
 }
 
 .weaponsTable table {

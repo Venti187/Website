@@ -17,16 +17,17 @@ window.onload = function(){
 
 }
 
-function toggleTable(tableId , spanId) {
-  var table = document.getElementById("tableId");
-  var span = document.getElementById("spanId");
+function toggleTable(tableId, spanId) {
 
+  var table = document.getElementById(tableId);
+  var span = document.getElementById(spanId);
+  
   if (table.style.display === "none") {
     fadeIn(table);
-    fadeOut(span);
+    span.style.display = "none";
   } else {
     fadeOut(table);
-    fadeIn(span);
+    span.style.display = "block";
   }
 }
 
@@ -58,3 +59,4 @@ function fadeOut(element) {
     }
   }, 50);
 }
+
