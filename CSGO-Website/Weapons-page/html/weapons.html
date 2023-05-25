@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weapons</title>
+    <link rel="icon" type="image/x-icon" href="../../Website-Images/CSGO-Logo.png">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="scrollTopBtn" title="Go to top"><i class='bx bx-chevron-up'></i></button>
+    <script src="../../javascript/javascript.js"></script>
+    <header class="top-header">
+        <a href="../../Index/html/index.html">
+            <h1>Counter Strike: Global Offensive</h1>
+        </a>
+    </header>
+    <main>
+        <!--Side bar-->
+        <div class="sidebar">
+            <div class="logo_details">
+                <img src="../../Website-Images/CSGO-Logo-nobackground.png">
+                <div class="logo_name">CS:GO</div>
+                <i class="bx bx-menu" id="btn"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <a href="../../Index/html/index.html">
+                        <i class='bx bx-home'></i>
+                        <span class="link_name">Homepage</span>
+                    </a>
+                    <span class="tooltip">Homepage</span>
+                </li>
+                <li>
+                    <a href="../../Weapons-page/html/weapons.html">
+                        <i class='bx bx-cross'></i>
+                        <span class="link_name">Weapons</span>
+                    </a>
+                    <span class="tooltip">Weapons</span>
+                </li>
+                <li>
+                    <a href="../../Esports-page/html/esports.php">
+                        <i class='bx bx-trophy'></i>
+                        <span class="link_name">E-Sports</span>
+                    </a>
+                    <span class="tooltip">Esports</span>
+                </li>
+                <li>
+                    <a href="../../Maps-page/html/maps.html">
+                        <i class='bx bx-map-alt'></i>
+                        <span class="link_name">Maps</span>
+                    </a>
+                    <span class="tooltip">Maps</span>
+                </li>
+                <li>
+                    <a href="../../Quiz-page/html/quiz.html">
+                        <i class='bx bx-play'></i>
+                        <span class="link_name">Skin Quiz</span>
+                    </a>
+                    <span class="tooltip">Skin Quiz</span>
+                </li>
+                <li class="toggleMode">
+                    <a onclick="toggleMode()">
+                      <i class='bx bxs-sun' id="toggleLogo"></i>
+                      <span class="link_name">Toggle</span>
+                    </a>
+                    <span class="tooltip">Toggle Light/Dark-Mode</span>
+                  </li>
+            </ul>
+        </div>
+        <div class="pageTitle">
+            <h1>Weapons</h1>
+            <span></span>
+        </div>
+        <!-- Assault Rifles -->
+        <div class="all-weapons">
+            <div id="column1">
+                <div id="assault-rifles">
+                    <div class="rifles-pictures">
+                        <figure><img src="../Images/Assault-Rifles.webp" alt="Assault-Rifle-img" id="assault-rifle-img"
+                                onclick="toggleTable('AssaultRifleTable','AssaultRiflesSpan')"
+                                title="Click to see Weapons"></figure>
+                        <span id="AssaultRiflesSpan">Assault Rifles</span>
+                        <div class="weaponsTable">
+                            <table id="AssaultRifleTable" style="display: none;">
+                                <tr>
+                                    <th>Weapon</th>
+                                    <th>Price</th>
+                                    <th>Availability</th>
+                                </tr>
+                                <tr>
+                                    <td>Galil AR</td>
+                                    <td>$2000</td>
+                                    <td>Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>Famas</td>
+                                    <td>$2250</td>
+                                    <td>Counter-Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>Ak-47</td>
+                                    <td>$2700</td>
+                                    <td>Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>M4A4</td>
+                                    <td>$3100</td>
+                                    <td>Counter-Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>M4A1-S</td>
+                                    <td>$2900</td>
+                                    <td>Counter-Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>SG-553</td>
+                                    <td>$3000</td>
+                                    <td>Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>AUG</td>
+                                    <td>$3300</td>
+                                    <td>Counter-Terrorists</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sniper Rifles -->
+                <div id="sniper-rifles">
+                    <div class="rifles-pictures">
+                        <figure><img src="../Images/Sniper-Rifles.webp" alt="sniper-rifles-img"
+                                onclick="toggleTable('SniperRiflesTable', 'SniperRiflesSpan')"
+                                title="Click to see Weapons"></figure>
+                        <span id="SniperRiflesSpan">Sniper Rifles</span>
+                        <div class="weaponsTable">
+                            <table id="SniperRiflesTable" style="display: none;">
+                                <tr>
+                                    <th>Weapon</th>
+                                    <th>Price</th>
+                                    <th>Availability</th>
+                                </tr>
+                                <tr>
+                                    <td>AWP</td>
+                                    <td>$4750</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>G3SG1</td>
+                                    <td>$5000</td>
+                                    <td>Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>SCAR-20</td>
+                                    <td>$5000</td>
+                                    <td>Counter-Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>SSG 08</td>
+                                    <td>$1700</td>
+                                    <td>CT/T</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mps -->
+            <div id="column2">
+                <div id="mp-rifles">
+                    <div class="rifles-pictures">
+                        <figure><img src="../Images/mp-rifles.webp" alt="mp-rifles-img"
+                                onclick="toggleTable('MpsTable', 'MpsSpan')" title="Click to see Weapons">
+                        </figure>
+                        <span id="MpsSpan">Mp's</span>
+                        <div class="weaponsTable">
+                            <table id="MpsTable" style="display: none;">
+                                <tr>
+                                    <th>Weapon</th>
+                                    <th>Price</th>
+                                    <th>Availability</th>
+                                </tr>
+                                <tr>
+                                    <td>PP-Bizon</td>
+                                    <td>$1400</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>Mac-10</td>
+                                    <td>$1050</td>
+                                    <td>Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>Mp-7</td>
+                                    <td>$1500</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>MP5-SD</td>
+                                    <td>$1500</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>MP9-SD</td>
+                                    <td>$1250</td>
+                                    <td>Counter-Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>P90</td>
+                                    <td>$2350</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>UMP-45</td>
+                                    <td>$1200</td>
+                                    <td>CT/T</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- Heavy Weapons -->
+                <div id="heavy-weapons">
+                    <div class="rifles-pictures">
+                        <figure><img src="../Images/heavy-weapons.webp" alt="heavy-weapons-img"
+                                onclick="toggleTable('HeavyWeaponsTable', 'HeavyWeaponsSpan')"
+                                title="Click to see Weapons"></figure>
+                        <span id="HeavyWeaponsSpan">Heavy Weapons</span>
+                        <div class="weaponsTable">
+                            <table id="HeavyWeaponsTable" style="display: none;">
+                                <tr>
+                                    <th>Weapon</th>
+                                    <th>Price</th>
+                                    <th>Availability</th>
+                                </tr>
+                                <tr>
+                                    <td>M249</td>
+                                    <td>$5200</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>Negev</td>
+                                    <td>$1700</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>Mag-7</td>
+                                    <td>$1300</td>
+                                    <td>Counter-Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>Nova</td>
+                                    <td>$1050</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>Sawed-Off</td>
+                                    <td>$1100</td>
+                                    <td>Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>XM1014</td>
+                                    <td>$2000</td>
+                                    <td>CT/T</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pistols -->
+            <div id="column3">
+                <div id="pistols">
+                    <div class="rifles-pictures">
+                        <figure><img src="../Images/pistols.webp" alt="pistols-img"
+                                onclick="toggleTable('PistolsTable', 'PistolsSpan')" title="Click to see Weapons">
+                        </figure>
+                        <span id="PistolsSpan">Pistols</span>
+                        <div class="weaponsTable">
+                            <table id="PistolsTable" style="display: none;">
+                                <tr>
+                                    <th>Weapon</th>
+                                    <th>Price</th>
+                                    <th>Availability</th>
+                                </tr>
+                                <tr>
+                                    <td>Desert Egale</td>
+                                    <td>$700</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>R8 Revolver</td>
+                                    <td>$600</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>Dual Berettas</td>
+                                    <td>$300</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>Five SeveN</td>
+                                    <td>$500</td>
+                                    <td>Counter-Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>Glock-18</td>
+                                    <td>$200</td>
+                                    <td>Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>P2000</td>
+                                    <td>$200</td>
+                                    <td>Counter-Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>USP-S</td>
+                                    <td>$200</td>
+                                    <td>Counter-Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>P250</td>
+                                    <td>$300</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>CZ75 Auto</td>
+                                    <td>$500</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>Tec-9</td>
+                                    <td>$500</td>
+                                    <td>Terrorists</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grenades -->
+                <div id="grenades">
+                    <div class="rifles-pictures">
+                        <figure><img src="../Images/grenades.webp" alt="grenades-img"
+                                onclick="toggleTable('GrenadesTable', 'GrenadesSpan')" title="Click to see Weapons">
+                        </figure>
+                        <span id="GrenadesSpan">Grenades</span>
+                        <div class="weaponsTable">
+                            <table id="GrenadesTable" style="display: none;">
+                                <tr>
+                                    <th>Grenade</th>
+                                    <th>Price</th>
+                                    <th>Availability</th>
+                                </tr>
+                                <tr>
+                                    <td>Flashbang</td>
+                                    <td>$200</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>Smoke Grenade</td>
+                                    <td>$300</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>High Explosive Grenade</td>
+                                    <td>$300</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>Decoy Grenade</td>
+                                    <td>$50</td>
+                                    <td>CT/T</td>
+                                </tr>
+                                <tr>
+                                    <td>Molotov</td>
+                                    <td>$400</td>
+                                    <td>Terrorists</td>
+                                </tr>
+                                <tr>
+                                    <td>Incendiary Grenade</td>
+                                    <td>$600</td>
+                                    <td>Counter-Terrorists</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../../javascript/javascript.js"></script>
+</body>
+<footer>
+    <p>&copy; 2023 Counter Strike: Global Offensive</p>
+</footer>
+
+</html>
