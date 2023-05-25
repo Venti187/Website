@@ -35,7 +35,7 @@ body {
 }
 
 .dark-mode #maps-list ul,
-.dark-mode #second-maps-list ul{
+.dark-mode #second-maps-list ul {
     color: black;
 }
 
@@ -50,16 +50,18 @@ body {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #333; /* Update to the desired lighter color */
+    background-color: #333;
+    /* Update to the desired lighter color */
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 50%; /* Make the button round */
-  }
-  
-  #scrollTopBtn:hover {
+    border-radius: 50%;
+    /* Make the button round */
+}
+
+#scrollTopBtn:hover {
     background-color: #555;
-  }
+}
 
 
 /* Side Bar */
@@ -242,8 +244,9 @@ body {
 }
 
 .sidebar li.toggleMode {
-    margin-top: 330px;
+    margin-top: 120px;
 }
+
 
 /* Header Image */
 .top-header {
@@ -812,6 +815,7 @@ table>tbody>tr>td>img {
 #second-maps-list {
     margin-top: -80px;
 }
+
 #second-maps-list ul {
     list-style-type: disc;
     padding-left: 20px;
