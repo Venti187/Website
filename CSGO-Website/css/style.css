@@ -21,7 +21,7 @@ body {
     width: 78px;
     padding: 6px 14px;
     z-index: 99;
-    background: linear-gradient(#f08d15, #cf7622);
+    background: linear-gradient(#ff9f2a, #e18127);
     transition: all .5s ease;
     position: fixed;
     top: 0;
@@ -193,7 +193,7 @@ body {
     background-image: linear-gradient(to bottom, transparent 0%, #000000bd 70%, #000000 95%), url(../Website-Images/header-background.webp);
     background-size: cover;
     background-position: center;
-    
+
 
 }
 
@@ -215,6 +215,77 @@ footer {
 
 /* Homepage */
 
+#homepage-container {
+    margin-left: 100px;
+}
+
+.section-text {
+    color: white;
+    padding-right: 10px;
+}
+
+.section-text p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#iframe {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#iframe iframe {
+    border: none;
+}
+
+.section-title h2 {
+    margin-left: 10px;
+    color: #ed8d19;
+    font-family: 'Staatliches';
+    text-shadow: 1px 1px 2px #fb9416;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.section-title span {
+    display: inline-block;
+    border-bottom: 3px #ed8d19 solid;
+    margin-bottom: 25px;
+    width: 88%;
+    
+}
+
+.gamemode-title h2 {
+    text-align: center;
+    text-decoration: underline;
+    color: #ed8d19;
+    font-family: 'Staatliches';
+    text-shadow: 1px 1px 2px #fb9416;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* design link */
+.link {
+    text-decoration: none;
+    color: #ce7d1a;
+    cursor: pointer;
+  }
+  
+  /* mouse over link */
+  .link:hover {
+    color: #fda02e;
+  
+  }
 
 
 
@@ -245,7 +316,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding-bottom: 150px;
-    
+
 }
 
 #mp-rifles {
@@ -299,15 +370,19 @@ footer {
 
 .all-weapons {
     display: grid;
-    grid-gap: 20px; /* Adjust the gap between images*/
-    padding: 20px; /* Add padding around the grid */
+    grid-gap: 20px;
+    /* Adjust the gap between images*/
+    padding: 20px;
+    /* Add padding around the grid */
 }
 
 .rifles-pictures {
     background: linear-gradient(45deg, #ca7710, #e8982c);
-    border-radius: 10px; /* Add rounded corners to the image containers */
-    padding: 10px; /* Add padding inside the image containers */
-    text-align: center; 
+    border-radius: 10px;
+    /* Add rounded corners to the image containers */
+    padding: 10px;
+    /* Add padding inside the image containers */
+    text-align: center;
 }
 
 /* Images Hover Zoom Out */
@@ -331,15 +406,17 @@ footer {
     margin-left: 110px;
     color: #ed8d19;
     font-family: 'Staatliches';
-    text-shadow: 2px 2px 4px #000000;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px #fb9416;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .pageTitle span {
     display: inline-block;
     border-bottom: 3px #ed8d19 solid;
     margin-left: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     width: 88%;
 }
 
@@ -400,7 +477,7 @@ td {
 }
 
 #container-center {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .container h1 {
@@ -409,9 +486,9 @@ td {
     margin-bottom: 2.8rem;
 }
 
-#skinImageContainer{
-        display: flex;
-        justify-content: center; 
+#skinImageContainer {
+    display: flex;
+    justify-content: center;
 }
 
 #skinImageContainer img {
@@ -470,7 +547,7 @@ td {
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(223,126,36,0.6);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(223, 126, 36, 0.6);
     transition: transform 150ms;
     transform: scale(1.02);
 }
@@ -481,7 +558,7 @@ td {
     transform: none;
 }
 
-#playAgainBtn{
+#playAgainBtn {
     font-family: 'Nova Square';
     font-size: 2.2rem;
     padding: 1.5rem 0;
@@ -496,7 +573,7 @@ td {
 
 #playAgainBtn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(223,126,36,0.6);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(223, 126, 36, 0.6);
     transition: transform 150ms;
     transform: scale(1.02);
 }

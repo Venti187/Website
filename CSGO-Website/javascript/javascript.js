@@ -61,3 +61,12 @@ function fadeOut(element) {
     }
   }, 50);
 }
+
+function smoothScroll(target) {
+  const element = document.getElementById(target);
+  window.scrollTo({
+    top: element.offsetTop,
+    behavior: 'smooth'
+  });
+}
+
