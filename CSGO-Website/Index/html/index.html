@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Counter Strike: Global Offensive</title>
   <link rel="icon" type="image/x-icon" href="../../Website-Images/CSGO-Logo.png">
   <link rel="stylesheet" type="text/css" href="../../css/style.css">
@@ -14,7 +18,9 @@
 
 <body>
   <header class="top-header">
-    <h1>Counter Strike: Global Offensive</h1>
+    <a href="../../Index/html/index.html">
+      <h1>Counter Strike: Global Offensive</h1>
+    </a>
   </header>
   <main>
     <!--Side bar-->
@@ -65,14 +71,292 @@
     <div class="pageTitle">
       <h1>Homepage</h1>
       <span></span>
-  </div>
+    </div>
+    <div id="homepage-container">
+      <div class="section-text">
+        <p>
+          <b>Global Offensive (CS:GO)</b> is a first-person shooter video game which is a part of the
+          Counter-Strike series. It was announced to the public on August 12, 2011, and is developed by Valve
+          Corporation
+          and their partner, Hidden Path Entertainment. The game was later released on August 21, 2012 for the
+          Playstation
+          3, Xbox 360, Microsoft Windows, macOS and later Linux as a downloadable title.
+        </p>
+      </div>
+      <div id="iframe">
+        <iframe src="https://www.youtube.com/embed/edYCtaNueQY" title="CS:Go Trailer" width="560" height="315"></iframe>
+      </div>
+      <div class="section-title">
+        <h2>Weapons & Equipment</h2>
+        <span></span>
+      </div>
+      <div class="section-text">
+        <p>
+          There are a total of 34 <a class="link" href="../../Weapons-page/html/weapons.html">weapons</a> in Global
+          Offensive, 19 of which are exclusive to the game. Among those 19, 10
+          are replacements of old weapons, retaining their role but are modelled after new guns, and the other 9 are
+          unique weapons with new roles and properties. Returning weapons also have many changes made to their general
+          properties.
+        </p>
+      </div>
+      <div class="section-title">
+        <h2>Gamemodes</h2>
+        <span></span>
+      </div>
+      <div class="section-text">
+        <p>
+          Counter-Strike:Global Offensive contains several multiplayer game modes:
+          <br>
+          <br>
+          Classic Casual and Classic Competitive: Classical game modes of <a class="link"
+            onclick="smoothScroll('bomb-defusal-mode')">Bomb
+            defusal</a> and <a class="link" onclick="smoothScroll('hostage-rescue-mode')">Hostage rescue</a>. Casual and
+          Competitive have different rules to better suit casual players and competitive players. The most played modes
+          are <a class="link" onclick="smoothScroll('deathmatch-mode')">Deathmatch</a>, <a class="link"
+            onclick="smoothScroll('competitive-mode')">Competitive Matchmaking</a> where
+          you play for your rank,<a class="link" onclick="smoothScroll('wingman-mode')">Wingman</a> which is also ranked
+          and <a class="link" onclick="smoothScroll('Danger-Zone-mode')">Dangerzone</a>.
+        </p>
+      </div>
+      <div id="bomb-defusal-mode">
+        <div class="gamemode-title">
+          <h2>Bomb defusal</h2>
+        </div>
+        <div class="image-container">
+          <img src="../Images/csgo_defusing.jpg" alt="bomb-desual">
+        </div>
+        <div class="section-text">
+          <p>
+            Bomb defusal is the most popular of the two "classic" game modes (the other being hostage rescue) and it's
+            pretty much the go-to game mode for anybody looking to play Counter-Strike. In this game mode, the
+            Terrorists must plant a bomb at one of two bomb sites (which are typically close to CT spawn), and the
+            Counter-Terrorists must stop them.
+            <br>
+            <br>
+            Terrorists win if they eliminate all enemies or plant the bomb before the round ends and it explodes (which
+            takes 45 seconds; it doesn't need to explode before the round time ends but it needs to be planted).
+            Counter-Terrorists win if they eliminate all enemies, defuse the bomb (which takes 10 seconds without defuse
+            kit/5 seconds with defuse kit) or if round time expires before the bomb is planted.
+            <br>
+            <br>
+            It's regarded as the most balanced game mode in terms of winnability for both sides, and for that reason it
+            is the only game mode in the Active Duty map list (see <a class="link"
+              href="../../Maps-page/html/maps.html">Maps</a> page for more info). Because it is "classic," it
+            can be played in both Casual and Competitive games.
+          </p>
+        </div>
+      </div>
+      <div id="hostage-rescue-mode">
+        <div class="gamemode-title">
+          <h2>Hostage rescue</h2>
+        </div>
+        <div class="image-container">
+          <img src="../Images/hostage_mode.jpg" alt="hostage-rescue">
+        </div>
+        <div class="section-text">
+          <p>
+            Hostage rescue is the other "classic" game mode in CS:GO. In this game mode, the Terrorists must protect the
+            hostages near their spawn, and the Counter-Terrorists must carry at least one of the hostages and take them
+            back to one of the designated "hostage rescue zones" (which are usually located near CT spawn). Hostages
+            cannot be killed, but players on both sides will lose money if they hurt a hostage.
+            <br>
+            <br>
+            Terrorists win if they eliminate all enemies or if round time expires before a hostage is rescued.
+            Counter-Terrorists win if they eliminate all enemies or rescue at least one of the hostages.
+            <br>
+            <br>
+            This game mode is generally regarded as less balanced than bomb defusal, as the Counter-Terrorists'
+            equipment makes them less suited for offensive attacks (most CT weapons are balanced towards being defensive
+            and slowing the enemy down, compared to their higher-damage T counterparts), among other reasons. Because it
+            is "classic," it can be played in both Casual and Competitive games.
+          </p>
+        </div>
+      </div>
+      <div id="deathmatch-mode">
+        <div class="gamemode-title">
+          <h2>Deathmatch</h2>
+        </div>
+        <div class="section-text">
+          <p>
+            <br>
+            Officially included in the Counter-Strike series for the first time with CS:GO, deathmatch is a game mode
+            that evolved from a popular community-made custom game mode for earlier games in the series. It's a basic
+            team deathmatch setting that is played on either Active Duty or Reserves maps (depending on the server) and
+            it's a great way to warm up your game and your aim against real opponents.
+            <br>
+            <br>
+            Players infinitely respawn with armor randomly across the map and can select any weapon for free (minus
+            grenades and weapons unavailable to the player's current team). The only objective is to get as many points
+            as possible before the round ends (typically 10 minutes). Some weapons give more points than others
+          </p>
+        </div>
+      </div>
+      <div id="competitive-mode">
+        <div class="gamemode-title">
+          <h2>Competitive Matchmaking</h2>
+        </div>
+        <div class="image-container">
+          <img src="../Images/competitive.webp" alt="competitive-mode">
+        </div>
+        <div class="section-text">
+          <p>
+            Counter-Strike: Global Offensive is the first Counter-Strike game to include a built-in competitive mode to
+            appeal to the professional and competitive player by being structured similarly to professional tournament
+            play, including swapping sides, friendly fire, and locked teams.
+            <br>
+            <br>
+            Unlike casual mode, competitive mode always pits two teams of 5 against each other in a 30 round match. The
+            roundtime is 1 minute 55 seconds and the bomb timer is 40 seconds. It is not possible to switch sides during
+            the game except at the halftime. After the first 15 rounds, the game reaches halftime and the two teams will
+            switch sides. The first team to score 16 points wins the game. If both teams score a total of 15 points by
+            the end of the 30th round, the match will end in a tie. If the player has a rank then they are revealed to
+            all players when the match has ended. Games can also end prematurely if one team surrenders to the other. A
+            vote to surrender must be unanimously agreed upon, and the vote is locked until a team member abandons the
+            match.
+            <br>
+            <br>
+            Additionally, players are required to have a profile rank of at least Private Rank 2 to be eligible for
+            competitive matchmaking.
+          </p>
+        </div>
+        <div id="ranks-title">
+          <h3>Ranks</h3>
+        </div>
+        <div id="ranks-list">
+          <div id="ranks-list">
+            <li>
+              <img src="../Images/Silver_1.webp" alt="Silver1">
+              <span>Silver 1</span>
+            </li>
+            <li>
+              <img src="../Images/Silver_2.webp" alt="Silver2">
+              <span>Silver 2</span>
+            </li>
+            <li>
+              <img src="../Images/Silver_3.webp" alt="Silver3">
+              <span>Silver 3</span>
+            </li>
+            <li>
+              <img src="../Images/Silver_4.webp" alt="Silver4">
+              <span>Silver 4</span>
+            </li>
+            <li>
+              <img src="../Images/Silver_Elite.webp" alt="Silver_Elite">
+              <span>Silver Elite</span>
+            </li>
+            <li>
+              <img src="../Images/Silver_Elite_Master.webp" alt="Silver_Elite_Master">
+              <span>Silver Elite Master</span>
+            </li>
+            <li>
+              <img src="../Images/Gold_Nova_1.webp" alt="Gold Nova 1">
+              <span>Gold Nova 1</span>
+            </li>
+            <li>
+              <img src="../Images/Gold_Nova_2.webp" alt="Gold Nova 2">
+              <span>Gold Nova 2</span>
+            </li>
+            <li>
+              <img src="../Images/Gold_Nova_3.webp" alt="Gold Nova 3">
+              <span>Gold Nova 3</span>
+            </li>
+            <li>
+              <img src="../Images/Gold_Nova_Master.webp" alt="Gold Nova Master">
+              <span>Gold Nova Master</span>
+            </li>
+            <li>
+              <img src="../Images/Master_Guardian_1.webp" alt="Master Guardian 1">
+              <span>Master Guardian 1</span>
+            </li>
+            <li>
+              <img src="../Images/Master_Guardian_2.webp" alt="Master Guardian 2">
+              <span>Master Guardian 2</span>
+            </li>
+            <li>
+              <img src="../Images/Master_Guardian_Elite.webp" alt="Master Guardian Elite">
+              <span>Master Guardian Elite</span>
+            </li>
+            <li>
+              <img src="../Images/Distinguished_Master_Guardian.webp" alt="Distinguished Master Guardian">
+              <span>Distinguished Master Guardian</span>
+            </li>
+            <li>
+              <img src="../Images/Legendary_Eagle.webp" alt="Legendary Eagle">
+              <span>Legendary Eagle</span>
+            </li>
+            <li>
+              <img src="../Images/Legendary_Eagle_Master.webp" alt="Legendary Eagle Master">
+              <span>Legendary Eagle Master</span>
+            </li>
+            <li>
+              <img src="../Images/Supreme_Master_First_Class.webp" alt="Supreme Master First Class">
+              <span>Supreme Master First Class</span>
+            </li>
+            <li>
+              <img src="../Images/Global_Elite.webp" alt="Global Elite">
+              <span>Global Elite</span>
+            </li>
+          </div>
+        </div>
+        <div id="wingman-mode">
+          <div class="gamemode-title">
+            <h2>Wingman</h2>
+          </div>
+          <div class="section-text">
+            <p>
+              <br>
+              Wingman is an event game mode added to Counter-Strike: Global Offensive in Operation Hydra, as a part of
+              the May 23, 2017 update, as one of the three Hydra Events, alongside War Games and Weapons Expert. After
+              November 13, 2017, the game mode became permanent, along with the new match matching algorithm called
+              "Trust Factor."
+              <br>
+              <br>
+              In this mode, maps are smaller and more compact, and there are only 2 players on one team. Other rules are
+              similar to Competitive. Additionally, the game mode uses same penalties like the competitive game mode.
+              <br>
+              <br>
+              The Wingman game mode consists of 2 versus 2 competitive matches on maps with one bombsite, a best-of-16
+              game format, and a special Wingman skill group. The rules are similar to competitive, but the game mode
+              takes place in "compact" maps with only one bombsite. Compared to original maps, Wingman versions are
+              smaller with most of the map cut off with invisible walls, and the spawns are moved much closer to the
+              bombsite. The round timer is 1 minute and 30 seconds.
+            </p>
+          </div>
+        </div>
+        <div id="Danger-Zone-mode">
+          <div class="gamemode-title">
+            <h2>Danger Zone</h2>
+          </div>
+          <div class="image-container">
+            <img src="../Images/Danger-Zone.webp" alt="Danger-Zone">
+          </div>
+          <div class="section-text">
+            <p>
+              Danger Zone is a Battle Royale mode added to Counter-Strike: Global Offensive in the December 6, 2018
+              update. As a Battle Royale game mode, Danger Zone sees 18 players enter a single battle arena, scavenge
+              for equipment, and fight to the last man.
+              <br>
+              <br>
+              Danger Zone is a battle royale mode where players scavenge for equipment and engage in combat with each
+              other in a shrinking battle arena, and the last surviving player (or player team) wins. The mode has
+              maximum 18 players per game, either in Solo or in Duos.
+              <br>
+              <br>
+              Danger Zone is set on large open maps exclusive to the mode. The map is divided up into hexagons. At the
+              start of a game, players need to choose an area of the map from which the player will spawn into. Once the
+              game starts, players will be rappelled into their preferred spawn area. Players start equipped with
+              nothing except their Fists as a weapon, one Medi-Shot, a Tablet to see the map and purchase items, as well
+              as one equipment of the player's choice.
+            </p>
+          </div>
+        </div>
+      </div>
   </main>
-  <footer>
-    <p>&copy; 2023 Counter Strike: Global Offensive</p>
-  </footer>
+
 
 </body>
-
-
+<footer>
+  <p>&copy; 2023 Counter Strike: Global Offensive</p>
+</footer>
 
 </html>
