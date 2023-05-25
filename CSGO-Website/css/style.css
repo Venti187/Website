@@ -219,3 +219,7 @@ table>tbody>tr>td>img {
     background-color: rgba(255, 255, 255, 0.4);
     border: 3px solid darkblue;
 }
+
+.sql {
+    color: red;
+}

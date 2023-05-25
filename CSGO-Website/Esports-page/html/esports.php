@@ -25,11 +25,10 @@
     <main>
 
         <div id="page" style="background-color: rgb(0, 0, 20); margin-left:20%; margin-right:20%;">
-            <p>du mensch</p>
-
             <div id="headlogo">
                 <img src="../../Esports-page/Images/CSGO-Logo.png" alt="csgo" width="4%" height="4%">
             </div>
+            <!-- Die 10 besten Teams -->
             <div id="topteamstitle">
                 <h1 class="teamTextColor">Top 10 Teams</h1>
             </div>
@@ -131,6 +130,7 @@
                     </tbody>
                 </table>
             </div>
+            <!-- Bestenliste aktualisierung -->
             <div id="teamsChanges">
                 <dl id="newsTeamsChanges" class="teamTextColor">
                     <dd>
@@ -155,32 +155,76 @@
                     </dd>
                 </dl>
             </div>
-
         </div>
     </main>
+    <!-- MySQL-Datenbankverbindung Eport Teams -->
     <div>
-        <?php 
-            // MySQL-Datenbankverbindung erstellen 
-            $verbindung = mysqli_connect('89.58.47.144', '2GIN', '!43L[rjz4Dj64o5v', 'dbSchule');
-            // Überprüfen, ob die Verbindung erfolgreich war 
-            if (!$verbindung) { die('Verbindungsfehler: ' . mysqli_connect_error());
-            }
-            // SQL-Abfrage erstellen 
-            $sql = "SELECT * FROM tblSchueler";
-            // SQL-Abfrage ausführen 
-            $resultat = mysqli_query($verbindung, $sql);
-            // Überprüfen, ob die Abfrage erfolgreich war 
-            if (mysqli_num_rows($resultat) > 0) { 
-                // Ergebnisse ausgeben 
-                while($row = mysqli_fetch_assoc($resultat)) { 
-                    echo "ID: " . $row["id"]. " - Name: " . $row["name"]. "<br>";
-                }
-            } else { 
-                echo "Keine Ergebnisse";
-            }
-            // Verbindung schließen 
-            mysqli_close($verbindung);
+        <?php
+        // MySQL-Datenbankverbindung erstellen 
+        $verbindung = mysqli_connect('89.58.47.144', '2GIN', '!43L[rjz4Dj64o5v', 'dbSchule');
+        // Überprüfen, ob die Verbindung erfolgreich war 
+        echo "<div id='sql'>";
+        if (!$verbindung) {
+            die('Verbindungsfehler: ' . mysqli_connect_error());
+        }
+        echo "</div>";
+        // SQL-Abfrage erstellen 
+        $sql = "SELECT * FROM tbEsportTeams";
+        // SQL-Abfrage ausführen 
+        $resultat = mysqli_query($verbindung, $sql);
         ?>
+        <div cass="table">
+            <table id="team-table">
+                <tr>
+                    <th>Team Name</th>
+                    <th>Team Coach</th>
+                    <th>Player 1</th>
+                    <th>Player 2</th>
+                    <th>Player 3</th>
+                    <th>Player 4</th>
+                </tr>
+                <?php
+                // Überprüfen, ob die Abfrage erfolgreich war 
+                if (mysqli_num_rows($resultat) > 0) {
+                    // Ergebnisse ausgeben 
+                    while ($row = mysqli_fetch_assoc($resultat)) {
+                        //echo
+                        //    "Team Name: " . $row["TeamName"] . "Coach: " . $row["TeamCoach"] .
+                        //    "Player 1: " . $row["Player1"] . "Player 2: " . $row["Player2"] .
+                        //    "Player 3: " . $row["Player3"] . "Player 4:" . $row["Player4"] .
+                        //    "Player 5:" . $row["Player5"] . "<br>";
+                        ?>
+                        <tr>
+                            <!-- Abrufen von Daten aus jeder Zeile und jeder Spalte -->
+                            <td>
+                                <?php echo $row["TeamName"]; ?>
+                            </td>
+                            <td>
+                                <?php echo $row["TeamCoach"]; ?>
+                            </td>
+                            <td>
+                                <?php echo $row["Player1"]; ?>
+                            </td>
+                            <td>
+                                <?php echo $row["Player2"]; ?>
+                            </td>
+                            <td>
+                                <?php echo $row["Player3"]; ?>
+                            </td>
+                            <td>
+                                <?php echo $row["Player4"]; ?>
+                            </td>
+                        </tr>
+                        <?php
+                    }
+                } else {
+                    echo "Keine Ergebnisse";
+                }
+                // Verbindung schließen 
+                mysqli_close($verbindung);
+                ?>
+            </table>
+        </div>
     </div>
 </body>
 <footer>
