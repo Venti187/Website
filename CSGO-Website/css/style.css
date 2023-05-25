@@ -34,6 +34,11 @@ body {
     color: black;
 }
 
+.dark-mode #maps-list ul,
+.dark-mode #second-maps-list ul{
+    color: black;
+}
+
 /* Scroll to top Button */
 
 #scrollTopBtn {

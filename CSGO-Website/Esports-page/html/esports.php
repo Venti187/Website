@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Sports</title>
     <link rel="icon" type="image/x-icon" href="../../Website-Images/CSGO-Logo.png">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="../../javascript/javascript.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top"><i class='bx bx-chevron-up'></i></button>
     <header class="top-header">
         <a href="../../Index/html/index.html">
             <h1>Counter Strike: Global Offensive</h1>
@@ -289,12 +292,10 @@
             <br>
         </div>
     </div>
-
-    </main>
-    <footer>
+</main>
+    <script src="../../javascript/javascript.js"></script>
+</body>
+<footer>
         <p>&copy; 2023 Counter Strike: Global Offensive</p>
     </footer>
-
-</body>
-
 </html>
