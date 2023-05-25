@@ -299,6 +299,7 @@ footer {
 #competitive-mode p {
     margin-bottom: 40px;
 }
+
 #ranks-title {
     color: #f08d15;
     text-decoration: underline;
@@ -314,23 +315,23 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  #ranks-list li {
+}
+
+#ranks-list li {
     margin: 0 10px;
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  #ranks-list li img {
+}
+
+#ranks-list li img {
     width: 100px;
-  }
-  
-  #ranks-list li span {
+}
+
+#ranks-list li span {
     color: white;
     display: block;
     margin-top: 5px;
-  }
+}
 
 /* Weapons Page */
 .rifles-pictures figure {
