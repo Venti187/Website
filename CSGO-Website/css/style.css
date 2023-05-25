@@ -8,6 +8,34 @@ body {
     flex-direction: column;
 }
 
+.dark-mode {
+    background-color: white;
+}
+
+.dark-mode .top-header {
+    width: 100%;
+    height: 175px;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.699) 70%, white 95%), url(../Website-Images/header-background.webp);
+}
+
+.dark-mode p {
+    color: black;
+}
+
+.dark-mode footer p {
+    color: white;
+}
+
+.dark-mode .container h1,
+.dark-mode .container #end-text,
+.dark-mode .container {
+    color: black;
+}
+
+
+
 /* Side Bar */
 * {
     padding: 0%;
@@ -183,8 +211,13 @@ body {
     border-radius: 5px;
 }
 
+.toggleMode{
+    cursor: pointer;
+}
 
-
+.sidebar li.toggleMode {
+    margin-top: 330px;
+}
 
 /* Header Image */
 .top-header {
