@@ -1,29 +1,73 @@
 
 // Open or close Sidebar
-window.onload = function(){
+window.onload = function () {
   const sidebar = document.querySelector(".sidebar");
   const closeBtn = document.querySelector("#btn");
 
-  closeBtn.addEventListener("click",function(){
+  closeBtn.addEventListener("click", function () {
     sidebar.classList.toggle("open")
     menuBtnChange()
   })
 
-  function menuBtnChange(){
-    if(sidebar.classList.contains("open")){
-      closeBtn.classList.replace("bx-menu","bx-menu-alt-right")
-    }else{
-      closeBtn.classList.replace("bx-menu-alt-right","bx-menu")
+  function menuBtnChange() {
+    if (sidebar.classList.contains("open")) {
+      closeBtn.classList.replace("bx-menu", "bx-menu-alt-right")
+    } else {
+      closeBtn.classList.replace("bx-menu-alt-right", "bx-menu")
     }
   }
 
+}
+
+//toggle between Dark and Lightmode
+window.addEventListener("DOMContentLoaded", function () {
+  // Retrieve the mode from localStorage
+  var isDarkModeEnabled = localStorage.getItem("darkModeEnabled");
+
+  // Apply the saved mode if it exists
+  if (isDarkModeEnabled === "true") {
+    var element = document.body;
+    element.classList.add("dark-mode");
+  }
+
+  var logoClass = localStorage.getItem("logoClass");
+  var logo = document.getElementById("toggleLogo");
+  if (logo && logoClass) {
+    logo.className = logoClass;
+  }
+});
+
+function toggleMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+
+  // Check if dark mode is enabled
+  var isDarkModeEnabled = element.classList.contains("dark-mode");
+
+  // Save the mode in localStorage
+  localStorage.setItem("darkModeEnabled", isDarkModeEnabled);
+
+  //Change the logo
+  var logo = document.getElementById("toggleLogo");
+  if (logo) {
+    if (isDarkModeEnabled) {
+      logo.classList.remove("bxs-sun");
+      logo.classList.add("bxs-moon");
+    } else {
+      logo.classList.remove("bxs-moon");
+      logo.classList.add("bxs-sun");
+    }
+  }
+
+  // Save the logo class in localStorage
+  localStorage.setItem("logoClass", logo.className);
 }
 
 function toggleTable(tableId, spanId) {
 
   var table = document.getElementById(tableId);
   var span = document.getElementById(spanId);
-  
+
   if (table.style.display === "none") {
     fadeIn(table);
     span.style.display = "none";
