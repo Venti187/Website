@@ -1,22 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maps</title>
   <link rel="icon" type="image/x-icon" href="../../Website-Images/CSGO-Logo.png">
   <link rel="stylesheet" type="text/css" href="../../css/style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script src="../../javascript/javascript.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
+  <button onclick="topFunction()" id="scrollTopBtn" title="Go to top"><i class='bx bx-chevron-up'></i></button>
   <header class="top-header">
     <a href="../../Index/html/index.html">
-    <h1>Counter Strike: Global Offensive</h1>
-  </a>
+      <h1>Counter Strike: Global Offensive</h1>
+    </a>
   </header>
   <main>
     <!--Side bar-->
@@ -75,13 +78,331 @@
       <h1>Maps</h1>
       <span></span>
     </div>
+    <div id="maps-container">
+      <div class="section-title">
+        <h2>Active Map Duty</h2>
+        <span></span>
+      </div>
+      <div class="section-text">
+        <p>
+          Maps currently in the Active Duty map group for Counter-Strike: Global Offensive represent the most balanced
+          and competitive maps. They are used in official tournaments and also compose the map pool for Premier
+          Competitive.
+        </p>
+      </div>
+      <div class="section-title">
+        <h2>Current Map Pool</h2>
+        <span></span>
+      </div>
+      <div id="maps-list">
+        <ul>
+          <li><a class="link" onclick="smoothScroll('ancient')">Ancient</a></li>
+          <li><a class="link" onclick="smoothScroll('anubis')">Anubis</a></li>
+          <li><a class="link" onclick="smoothScroll('inferno')">Inferno</a></li>
+          <li><a class="link" onclick="smoothScroll('mirage')">Mirage</a></li>
+          <li><a class="link" onclick="smoothScroll('nuke')">Nuke</a></li>
+          <li><a class="link" onclick="smoothScroll('overpass')">Overpass</a></li>
+          <li><a class="link" onclick="smoothScroll('vertigo')">Vertigo</a></li>
+        </ul>
+      </div>
+      <div id="ancient">
+        <div class="map-name">
+          <h2>Ancient</h2>
+        </div>
+        <div class="image-container">
+          <img src="../Images/De_ancient.webp" alt="ancient" width="400px" height="250">
+        </div>
+        <div class="section-text">
+          <p>
+            <b>Anubis (de_anubis)</b> is a community-created Bomb Defusal map designed by Roald,
+            jakuza and jd40 and is featured in Counter-Strike: Global Offensive, added into the game in the March 31,
+            2020 update along with Chlorine. Anubis was first introduced into Scrimmage mode only and has eventually
+            found its way into the Active Duty Group, replacing <a class="link" onclick="smoothScroll('dust2')">Dust
+              II</a>.
+            <br>
+            <br>
+            On April 10, 2020, Anubis was moved from Scrimmage to Competitive after only ten days of being featured in
+            the game. It was the second map to get moved into Competitive since the introduction of Scrimmage, the first
+            being new Cache. On May 3, 2021, Anubis was removed from the game, however just over 1 year later, it was
+            re-added on the August 16, 2022 update for for the 10 year birthday of Counter-Strike: Global Offensive.
+          </p>
+        </div>
+      </div>
+      <div id="anubis">
+        <div class="map-name">
+          <h2>Anubis</h2>
+        </div>
+        <div class="image-container">
+          <img src="../Images/De_anubis.webp" alt="anubis" width="400px" height="250">
+        </div>
+        <div class="section-text">
+          <p>
+            <b>Ancient (de_ancient)</b> is an official Bomb Defusal map for Counter-Strike: Global Offensive, released
+            as part
+            of Operation Broken Fang on the December 3, 2020 update. Initially released as part of the Reserves Group,
+            the May 3, 2021 update moved Ancient to the Active Duty map group, replacing <a class="link"
+              onclick="smoothScroll('train')">Train</a>.
+            <br>
+            <br>
+            Ancient appears to take place in an archaeological site in the middle of a rainforest (likely in central
+            America). Across the map there are plenty of artefacts such as pots, artworks and monuments which resemble
+            those from the Aztec empire. Each bombsite is referred to as a 'plaza' in the signage and has a distinct
+            theme color. Bombsite A is colored orange, with tarps, paint and signs and Bombsite B is a pale blue color.
+            <br>
+            <br>
+            After the IEM Rio 2022 Major, on the November 18, 2022 update, it was added to the Active Duty Group. This
+            is the second community-made map which has made it into the Active Duty Group after Cache.
+          </p>
+        </div>
+      </div>
+      <div id="inferno">
+        <div class="map-name">
+          <h2>Inferno</h2>
+        </div>
+        <div class="image-container">
+          <img src="../Images/De_inferno.webp" alt="inferno" width="400px" height="250">
+        </div>
+        <div class="section-text">
+          <p>
+            <b>Inferno (de_inferno)</b> is a bomb defusal map featured in the Counter-Strike series.
+            <br>
+            <br>
+            The map is set in a small town with European architecture. In the Global Offensive version, the presence of
+            the Separatist faction suggests that the map is definitely set in Italy, as evidenced by the signs written
+            in Italian seen around the map. However, the separatist faction is also present in the Basque country of
+            Spain and France, so it's plausible it could be there, too.
+            The map is loosely rectangular, with the Counter-Terrorists spawning on one corner of the map and the
+            Terrorists on the diagonally opposite corner, and the two bombsites sitting at the other two corners.
+          </p>
+        </div>
+      </div>
+      <div id="mirage">
+        <div class="map-name">
+          <h2>Mirage</h2>
+        </div>
+        <div class="image-container">
+          <img src="../Images/De_mirage.webp" alt="mirage" width="400px" height="250">
+        </div>
+        <div class="section-text">
+          <p>
+            <b>Mirage (de_mirage)</b> formerly known as Strike, is a Bomb Defusal map for Counter-Strike: Global
+            Offensive. The map was added to the game on June 6, 2013.
+            <br>
+            <br>
+            The map is themed like a Middle Eastern town, but because of its close resemblance to Moroccan style
+            architecture, it is likely set somewhere in Morocco.
+          </p>
+        </div>
+      </div>
+      <div id="nuke">
+        <div class="map-name">
+          <h2>Nuke</h2>
+        </div>
+        <div class="image-container">
+          <img src="../Images/De_nuke.webp" alt="nuke" width="400px" height="250">
+        </div>
+        <div class="section-text">
+          <p>
+            <b>Nuke (de_nuke)</b> is a Bomb Defusal map featured in Counter-Strike, Counter-Strike: Source, and
+            Counter-Strike: Global Offensive.
+            <br>
+            <br>
+            The map takes place in a warehouse containing nuclear materials or a nuclear power plant. In Global
+            Offensive, the original version of the map takes place a German nuclear power plant, while the revamped
+            version takes place in an American one. Unlike most Counter-Strike bomb defusal maps, the map revolves
+            around a central structure rather than
+            multiple lanes, with the two bombsites being overlapped on top of each other.
+          </p>
+        </div>
+      </div>
+      <div id="overpass">
+        <div class="map-name">
+          <h2>Overpass</h2>
+        </div>
+        <div class="image-container">
+          <img src="../Images/De_overpass.webp" alt="overpass" width="400px" height="250">
+        </div>
+        <div class="section-text">
+          <p>
+            <b>Overpass (de_overpass)</b> is a Bomb Defusal map for Counter-Strike: Global Offensive, released in the
+            Winter Offensive update along with the map <a class="link"
+              onclick="smoothScroll('cobblestone')">Cobblestone</a>.
+            <br>
+            <br>
+            The map's setting is a canal overpass and the park built above it in Berlin, Germany. The GSG-9 must protect
+            a stalled military shipment on a canal overpass while the Phoenix Connexion can either attack the shipment
+            head-on or attempt to destroy the overpass itself by bombing the pillar below.
+            <br>
+            <br>
+            The Counter-Terrorists spawn in bombsite A, where the disabled cargo truck is located at. Meanwhile, the
+            Terrorists' Spawn Zone is around the bottom of the canal.Bombsite B is located below the CT Spawn Zone and
+            can easily be accessed from a stairwell. In here, snipers
+            can easily guard here as a sniper nest is positioned towards the entire site.
+          </p>
+        </div>
+      </div>
+      <div id="vertigo">
+        <div class="map-name">
+          <h2>Vertigo</h2>
+        </div>
+        <div class="image-container">
+          <img src="../Images/De_vertigo.webp" alt="vertigo" width="400px" height="250">
+        </div>
+        <div class="section-text">
+          <p>
+            <b>Vertigo (de_vertigo)</b> is a bomb defusal map featured in Counter-Strike and later added to
+            Counter-Strike: Global Offensive with the October 1, 2012 update.
+            <br>
+            <br>
+            Vertigo is based on a skyscraper that is under construction and centered the conflict between the
+            Counter-Terrorist and the Terrorist teams. The main objective for the Terrorists is to bomb the building
+            while the CTs must prevent them from achieving their goal. Both bombsites and the Counter-Terrorist spawn
+            are located on the upper floor of the map, whilst the Terrorist spawn is located on the lower floor in the
+            stairwell.
+          </p>
+        </div>
+      </div>
+      <div class="section-title">
+        <h2>Current Map Pool</h2>
+        <span></span>
+      </div>
+      <div class="section-text">
+        <p>
+          The Active Duty map group has changed through updates and maps have been rotated in and out. Below are the
+          maps which were previously part of the Active Duty map group:
+        </p>
+      </div>
+      <div id="second-maps-list">
+        <ul>
+          <li><a class="link" onclick="smoothScroll('cache')">Cache</a></li>
+          <li><a class="link" onclick="smoothScroll('cobblestone')">Cobblestone</a></li>
+          <li><a class="link" onclick="smoothScroll('dust2')">Dust II</a></li>
+          <li><a class="link" onclick="smoothScroll('train')">Train</a></li>
+        </ul>
+      </div>
+      <div id="cache">
+        <div class="map-name">
+          <h2>Cache</h2>
+        </div>
+        <div class="image-container">
+          <img src="../Images/De_cache.webp" alt="cache" width="400px" height="250">
+        </div>
+        <div class="section-text">
+          <p>
+            <b>Cache (de_cache)</b> is a custom Bomb Defusal map featured in Operation Bravo and in Operation Phoenix,
+            available in Counter-Strike: Global Offensive.
+            <br>
+            <br>
+            With the introduction of Operation Breakout, Cache became an official map. It was introduced to the Active
+            Duty map pool being the first and only community map to do so, but was since removed and replaced by
+            <a class="link" onclick="smoothScroll('vertigo')">Vertigo</a>
+            on the March 28, 2019. It is Defusal Group Delta in Deathmatch and Casual and is still playable in
+            competitive matchmaking.
+            <br>
+            <br>
+            Cache was reworked and shown to the public for the first time on 29th September 2019 during the ESL One New
+            York 2019 CS:GO tournament. This map is entirely maintained by it's creator, FMPONE (Shawn Snelling).
+          </p>
+        </div>
+      </div>
+      <div id="cobblestone">
+        <div class="map-name">
+          <h2>Cobblestone</h2>
+        </div>
+        <div class="image-container">
+          <img src="../Images/De_cbblestone_.webp" alt="cobblestone" width="400px" height="250">
+        </div>
+        <div class="section-text">
+          <p>
+            <b>Cobblestone (de_cobblestone)</b> formerly known as Cobble, is a bomb defusal map featured in the
+            Counter-Strike series. It was added to Counter-Strike: Global Offensive in the Winter Offensive update
+            alongside the map <a class="link" onclick="smoothScroll('overpass')">Overpass</a>. It is currently in
+            Defusal Group Sigma and is available for Casual matchmaking,
+            Deathmatch and the B bombsite is used for Wingman.
+            <br>
+            <br>
+            Cobblestone is a large-sized map, and had quite significant vertical combat in its earlier iterations. In
+            earlier versions, it is fairly easy to take fall damage due to the high height of many of the map's drops.
+            Bots in early versions of the game will also occasionally fall to their deaths. Additionally, this map is
+            open, making snipers very useful.
+            <br>
+            <br>
+            Bombsite A is located right next to the Counter-Terrorist spawn, and bombsite B is located around a large
+            statue. Terrorists spawn in lower area with a sniper tower nearby, a tunnel to bombsite A and stairs to
+            bombsite B. Path to bombsite A leads to a very open area leading either to A long, underpass or to bombsite
+            B via a connector. Path to B leads to tunnels with B long and a drop.
+            <br>
+            Wingman version of the map has only bombsite B, with Terrorists spawning in tunnels and Counter-Terrorists
+            spawning in the connector between A and B bombsites.
+          </p>
+        </div>
+      </div>
+      <div id="dust2">
+        <div class="map-name">
+          <h2>Dust II</h2>
+        </div>
+        <div class="image-container">
+          <img src="../Images/De_dust2.webp" alt="dust2" width="400px" height="250">
+        </div>
+        <div class="section-text">
+          <p>
+            <b>Dust II (de_dust2)</b> also known as Dust2 is a Bomb Defusal map featured in the Counter-Strike series.
+            It is the successor to Dust.
+            <br>
+            <br>
+            One of the most popular maps in the Counter-Strike series due to its strong balance, Dust II is an iconic
+            map for the Counter-Strike franchise. It is widely played on many servers and is a popular choice for
+            Counter-Strike tournaments as well.
+            <br>
+            <br>
+            The map appears to be set in the Middle East, similar to its predecessor Dust. An earlier version of the map
+            lack many identifying features, with the only identifying features being what looks like sandstone textures
+            for walls and sand for floor.
+            <br>
+            <br>
+            Later games added more visually identifiable features to show the map's setting. The original Global
+            Offensive version featured Islamic architecture and presence of military and conflict activity such as
+            Humvees and bombed walls, reflecting a contemporary view of the Middle East.
+            <br>
+            <br>
+            In the revamped version, the map is set in Morocco, which is not in the geographic region of Middle East,
+            but featured similar architectural styles.
+            <br>
+            <br>
+            The map can be loosely divided into three interconnected lanes: Tunnels connecting T Spawn to bombsite B,
+            mid connecting T Spawn to CT Spawn and catwalk, and Long connecting T Spawn to bombsite A. Pathways branch
+            out from these lanes and form an interconnected map allowing for tactical player movements.
+          </p>
+        </div>
+      </div>
+      <div id="train">
+        <div class="map-name">
+          <h2>Train</h2>
+        </div>
+        <div class="image-container">
+          <img src="../Images/De_train.webp" alt="train" width="400px" height="250">
+        </div>
+        <div class="section-text">
+          <p>
+            <b>Train (de_train)</b> is a bomb defusal map featured in Counter-Strike, Counter-Strike: Source,
+            Counter-Strike: Global Offensive and Counter-Strike 2.
+            <br>
+            <br>
+            Counter-Terrorists: Prevent Terrorists from bombing the nuclear payloads on two trains. Team members must
+            defuse any bombs that threaten the payloads.
+            <br>
+            Terrorists: The Terrorist carrying the C4 must destroy one of the payloads.
+            <br>
+            Other Notes: There are 2 payloads on the trains in the mission.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="../../javascript/javascript.js"></script>
   </main>
-  <footer>
-    <p>&copy; 2023 Counter Strike: Global Offensive</p>
-  </footer>
-
 </body>
-
-
+<footer>
+  <p>&copy; 2023 Counter Strike: Global Offensive</p>
+</footer>
 
 </html>
