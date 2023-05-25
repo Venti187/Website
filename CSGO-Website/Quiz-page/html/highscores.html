@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../Website-Images/CSGO-Logo.png">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/highscores.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../../javascript/javascript.js"></script>
+    <script src="https://kit.fontawesome.com/c1e4435f6c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    
+    <title>Highscores</title>
+</head>
+
+<body>
+    <header class="top-header">
+        <h1>Counter Strike: Global Offensive</h1>
+    </header>
+    <main>
+        <!--Side bar-->
+        <div class="sidebar">
+            <div class="logo_details">
+                <img src="../../Website-Images/CSGO-Logo-nobackground.png">
+                <div class="logo_name">CS:GO</div>
+                <i class="bx bx-menu" id="btn"></i>
+            </div>
+            <ul class="nav_list">
+                <li>
+                    <a href="../../Index/html/index.html">
+                        <i class='bx bx-home'></i>
+                        <span class="link_name">Homepage</span>
+                    </a>
+                    <span class="tooltip">Homepage</span>
+                </li>
+                <li>
+                    <a href="../../Weapons-page/html/weapons.html">
+                        <i class='bx bx-cross'></i>
+                        <span class="link_name">Weapons</span>
+                    </a>
+                    <span class="tooltip">Weapons</span>
+                </li>
+                <li>
+                    <a href="../../Esports-page/html/esports.html">
+                        <i class='bx bx-trophy'></i>
+                        <span class="link_name">E-Sports</span>
+                    </a>
+                    <span class="tooltip">Esports</span>
+                </li>
+                <li>
+                    <a href="../../Maps-page/html/maps.html">
+                        <i class='bx bx-map-alt'></i>
+                        <span class="link_name">Maps</span>
+                    </a>
+                    <span class="tooltip">Maps</span>
+                </li>
+                <li>
+                    <a href="../../Quiz-page/html/quiz.html">
+                        <i class='bx bx-play'></i>
+                        <span class="link_name">Skin Quiz</span>
+                    </a>
+                    <span class="tooltip">Skin Quiz</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="container">
+            <div id="highScores" class="flex-center flex-column">
+                <h1 id="finalScore">Leaderboard</h1>
+                <ul id="highScoresList"></ul>
+                <a href="../html/quiz.html" class="btn">Go Home<i class="fas fa-home"></i></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Counter Strike: Global Offensive</p>
+    </footer>
+    <script src="../javascript/highscores.js"></script>
+</body>
+
+</html>
