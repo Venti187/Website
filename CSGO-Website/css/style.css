@@ -9,6 +9,21 @@ body {
     transition: background-color 0.4s ease;
 }
 
+.toggle-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 15px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: none;
+  }
+
 .dark-mode {
     background-color: white;
     transition: background-color 0.4s ease;
@@ -244,20 +259,6 @@ body {
     line-height: 80px;
     font-size: 25px;
     border-radius: 5px;
-}
-
-.toggleMode {
-    cursor: pointer;
-}
-
-.sidebar li.toggleMode {
-    margin-top: 110px;
-}
-
-@media all and (max-width: 1000px) {
-  .sidebar li.toggleMode {
-   margin:120px;
-  }
 }
 
 
