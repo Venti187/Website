@@ -9,6 +9,7 @@ body {
     transition: background-color 0.4s ease;
 }
 
+/* toggle Dark/Light mode */
 .toggle-button {
     position: fixed;
     top: 20px;
@@ -22,7 +23,11 @@ body {
     font-size: 16px;
     cursor: pointer;
     box-shadow: none;
-  }
+}
+
+.toggle-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
 
 .dark-mode {
     background-color: white;
