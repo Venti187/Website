@@ -6,10 +6,12 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    transition: background-color 0.4s ease;
 }
 
 .dark-mode {
     background-color: white;
+    transition: background-color 0.4s ease;
 }
 
 .dark-mode .top-header {
@@ -17,26 +19,31 @@ body {
     height: 175px;
     background-size: cover;
     background-position: center;
+    transition: background-color 0.4s ease;
     background-image: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.699) 70%, white 95%), url(../Website-Images/header-background.webp);
 }
 
 .dark-mode p {
     color: black;
+    transition: background-color 0.4s ease;
 }
 
 .dark-mode footer p {
     color: white;
+    transition: background-color 0.4s ease;
 }
 
 .dark-mode .container h1,
 .dark-mode .container #end-text,
 .dark-mode .container {
     color: black;
+    transition: background-color 0.4s ease;
 }
 
 .dark-mode #maps-list ul,
 .dark-mode #second-maps-list ul {
     color: black;
+    transition: background-color 0.4s ease;
 }
 
 /* Scroll to top Button */
@@ -244,11 +251,11 @@ body {
 }
 
 .sidebar li.toggleMode {
-    margin-top: 330px;
+    margin-top: 110px;
 }
 
 @media all and (max-width: 1000px) {
-  .class {
+  .sidebar li.toggleMode {
    margin:120px;
   }
 }
